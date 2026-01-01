@@ -72,6 +72,10 @@ Statistics
 
 ##  Descriptive Statistics
 
+```
+Descriptive statistics deals with the collection, organization, analysis, interpretation, and presentation of data.
+It focuses on summarizing and describing the main features of a set of data, without making inferences or predictions about the larger population.
+```
 
 > Descriptive statistics focuses on **summarizing and describing existing data**, without making predictions.
 
@@ -106,8 +110,11 @@ Example:
 
 ## Inferential Statistics
 
-> Inferential statistics uses **sample data** to make **predictions or inferences about a larger population**.
+```
+Inferential statistics deals with making conclusions and predictions about a population based on a sample. It involves the use of probability theory to estimate the likelihood of certain events occurring, hypothesis testing to determine if a certain claim about a population is supported by the data, and regression analysis to examine the relationships between variables
+```
 
+> Inferential statistics uses **sample data** to make **predictions or inferences about a larger population**.
 
 
 ### Why Inferential Statistics is Needed
@@ -150,26 +157,32 @@ Sample (Few selected)
 
 
 ###  Population
-
+```
+Populationrefers to the entire group of individuals or objects that we are interested in studying. It is the complete set of observations that we want to make inferences about. For example, the population might be all the students in a particular school or all the cars in a particular city.
+```
 >The **entire group** of individuals or items you want to study.
 
 **Example**
 
-* All people in India
+* All people in Bangladesh
 * All students in a university
-* All cricket fans in India
+* All cricket fans in Bangladesh
 
 
 
 ###  Sample
-
+```
+A sample, on the other hand, is a subset of the population. It is a smaller group of individuals or objects that we select from the population to study. Samples are used to estimate characteristics of the population, such as the mean or the proportion with a certain attribute. For example, we might randomly select 100 students.
+```
 >A **subset** of the population selected for analysis.
 
 **Example**
 
-* 50,000 people selected from India
+* 50,000 people selected from Bangladesh
 * Students who attend physical classes
 * Fans who watch matches in the stadium
+* All cricket fans vs fans who were present in the stadium
+* All students vs who visit college for lectures
 
 
 
@@ -194,6 +207,11 @@ Sample (Few selected)
 3. **Representative**
 
    * Covers all variations (gender, age, region, class, etc.)
+     
+**Parameter Vs Statistics**
+```
+A parameter is a characteristic of a population, while a statistic is a characteristic of a sample. Parameters are generally unknown and are estimated using statistics. The goal of statistical inference is to use the information obtained from the sample to make inferences about the population parameters.
+```
 
 ---
 
@@ -219,7 +237,7 @@ Data
 * Religion
 * State
 * College branch
-* Favorite IPL team
+* Favorite BPL team
 
 #### a) Nominal Data
 
@@ -269,6 +287,9 @@ Data
 ---
 
 ## Descriptive Statistics — Measures of Central Tendency
+```
+A measure of central tendency is a statistical measure that represents a typical or central value for a dataset. It provides a summary of the data by identifying a single value that is most representative of the dataset as a whole.
+```
 
 >These measures describe the **center** of data.
 
@@ -337,10 +358,6 @@ Mean becomes **very high**, but does NOT represent most people. One person earni
 * Not affected by outliers
 * Better representation when data is skewed
 
-**Use case**
-
-* Median salary of a college is better than average salary
-
 
 **Example-1 (Odd count)**
 
@@ -382,7 +399,9 @@ Mode = 2
 
 ### Weighted Mean
 
-
+```
+The weighted mean is the sum of the products of each value and its weight, divided by the sum of the weights. It is used to calculate a mean when the values in the dataset have different importance or frequency.
+```
 > Mean where **different values have different importance (weights)**.
 
 
@@ -405,17 +424,15 @@ Weighted Mean =
 * Performance scoring
 
 ### Trimmed Mean
-
+```
+A trimmed mean is calculated by removing a certain percentage of the smallest and largest values from the dataset and then taking the mean of the remaining values. The percentage of values removed is called the trimming percentage.
+```
 > Mean calculated after **removing extreme values (outliers)**.
-
-
 
 **Example**
 
 * Remove top 20% and bottom 20%
 * Calculate mean on remaining data
-
-
 
 **Why Trimmed Mean?**
 
@@ -423,6 +440,9 @@ Weighted Mean =
 * Used when data is skewed
 ---
 ## Measures of Dispersion
+```
+A measure of dispersion is a statistical measure that describes the spread or variability of a dataset. It provides information about how the data is distributed around the central tendency (mean, median or mode) of the dataset.
+```
 
 >Dispersion tells **how spread out** the data is.
 
@@ -437,10 +457,10 @@ Dispersion
 
 ### Range
 
-
+```
+The range is the difference between the maximum and minimum values in the dataset. It is a simple measure of dispersion that is easy to calculate but can be affected by outliers.
+```
 > Range = Max − Min
-
-
 
 **Example**
 
@@ -452,7 +472,11 @@ Range = 10 − 2 = 8
 
 * Extremely sensitive to outliers
 * Not reliable alone
+  
 ### Variance
+```
+The variance is the average of the squared differences between each data point and the mean. It measures the average distance of each data point from the mean and is useful in comparing the dispersion of datasets with different means.
+```
 
 > Variance measures **average squared distance from the mean**
 
@@ -487,7 +511,9 @@ Range = 10 − 2 = 8
 
 
 ### Standard Deviation
-
+```
+The standard deviation is the square root of the variance. It is a widely used measure of dispersion that is useful in describing the shape of a distribution.
+```
 > Standard Deviation = √Variance
 
 
@@ -501,10 +527,16 @@ Range = 10 − 2 = 8
 
 
 ### Coefficient of Variation (CV)
+```
+The CV is the ratio of the standard deviation to the mean expressed as a percentage. It is used to compare the variability of datasets with different means and is commonly used in fields such as biology, chemistry, and engineering.
+
+The coefficient of variation (CV) is a statistical measure that expresses the amount of variability in a dataset relative to the mean. It is a dimensionless quantity that is expressed as a percentage.
+
+The formula for calculating the coefficient of variation is:
 
 > CV = (Standard Deviation / Mean) × 100
 
-
+```
 **Why CV is Important**
 
 Allows comparison between **different units**
@@ -522,11 +554,16 @@ Allows comparison between **different units**
 ## Univariate Analysis (One Column)
 
 
-**For Categorical Data**
+**Categorical -Frequency Distribution Table & Cumulative Frequency**
 
-1. Frequency Distribution Table
-2. Relative Frequency (%)
-3. Cumulative Frequency
+A **frequency distribution table** is a table that summarizes the number of times (or frequency) that each value occurs in a dataset.
+Let's say we have a survey of 200 people and we ask them about their favourite type of vacation, which could be one of six categories: Beach, City, Adventure, Nature, Cruise, or Other
+
+
+**Relative frequency** is the proportion or percentage of a category in a dataset or sample. It is calculated by dividing the frequency of a category by the total number of observations in the dataset or sample.
+
+
+**Cumulative frequency** is the running total of frequencies of a variable or category in a dataset or sample. It is calculated by adding up the frequencies of the current category and all previous categories in the dataset or sample.
 
 **Graphs**
 
@@ -535,12 +572,9 @@ Allows comparison between **different units**
 * Line Chart (Cumulative)
 
 
-**For Numerical Data**
+**Numerical -Frequency Distribution Table & Histogram**
 
-* Histogram
-
-**Important Concept**
-
+ **Histogram**
 * Bin (bucket) size affects histogram shape
 
 
@@ -559,6 +593,9 @@ Allows comparison between **different units**
 ### Categorical vs Categorical
 
 * **Contingency Table (Cross-tab)**
+  ```
+  A contingency table, also known as a cross-tabulation or crosstab, is a type of table used in statistics to summarize the relationship between two categorical variables. A contingency table displays the frequencies or relative frequencies of the observed values of the two variables, organized into rows and columns.
+  ```
 
 **Example (Titanic)**
 
