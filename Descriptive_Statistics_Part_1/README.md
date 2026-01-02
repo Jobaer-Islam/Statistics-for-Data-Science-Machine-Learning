@@ -73,8 +73,9 @@ Statistics
 ##  Descriptive Statistics
 
 ```
-Descriptive statistics deals with the collection, organization, analysis, interpretation, and presentation of data.
-It focuses on summarizing and describing the main features of a set of data, without making inferences or predictions about the larger population.
+Descriptive statistics deals with the collection, organization, analysis, interpretation,
+and presentation of data. It focuses on summarizing and describing the main features of
+a set of data, without making inferences or predictions about the larger population.
 ```
 
 > Descriptive statistics focuses on **summarizing and describing existing data**, without making predictions.
@@ -111,7 +112,10 @@ Example:
 ## Inferential Statistics
 
 ```
-Inferential statistics deals with making conclusions and predictions about a population based on a sample. It involves the use of probability theory to estimate the likelihood of certain events occurring, hypothesis testing to determine if a certain claim about a population is supported by the data, and regression analysis to examine the relationships between variables
+Inferential statistics deals with making conclusions and predictions about a population based on a sample.
+It involves the use of probability theory to estimate the likelihood of certain events occurring, hypothesis testing
+to determine if a certain claim about a population is supported by the data, and regression analysis
+to examine the relationships between variables
 ```
 
 > Inferential statistics uses **sample data** to make **predictions or inferences about a larger population**.
@@ -158,7 +162,9 @@ Sample (Few selected)
 
 ###  Population
 ```
-Populationrefers to the entire group of individuals or objects that we are interested in studying. It is the complete set of observations that we want to make inferences about. For example, the population might be all the students in a particular school or all the cars in a particular city.
+Populationrefers to the entire group of individuals or objects that we are interested in studying.
+ It is the complete set of observations that we want to make inferences about. For example,
+the population might be all the students in a particular school or all the cars in a particular city.
 ```
 >The **entire group** of individuals or items you want to study.
 
@@ -172,7 +178,9 @@ Populationrefers to the entire group of individuals or objects that we are inter
 
 ###  Sample
 ```
-A sample, on the other hand, is a subset of the population. It is a smaller group of individuals or objects that we select from the population to study. Samples are used to estimate characteristics of the population, such as the mean or the proportion with a certain attribute. For example, we might randomly select 100 students.
+A sample, on the other hand, is a subset of the population. It is a smaller group of individuals or
+objects that we select from the population to study. Samples are used to estimate characteristics of the population,
+such as the mean or the proportion with a certain attribute. For example, we might randomly select 100 students.
 ```
 >A **subset** of the population selected for analysis.
 
@@ -210,22 +218,16 @@ A sample, on the other hand, is a subset of the population. It is a smaller grou
      
 **Parameter Vs Statistics**
 ```
-A parameter is a characteristic of a population, while a statistic is a characteristic of a sample. Parameters are generally unknown and are estimated using statistics. The goal of statistical inference is to use the information obtained from the sample to make inferences about the population parameters.
+A parameter is a characteristic of a population, while a statistic is a characteristic of a sample.
+Parameters are generally unknown and are estimated using statistics. The goal of statistical inference is
+to use the information obtained from the sample to make inferences about the population parameters.
 ```
 
 ---
 
 ##  Types of Data
 
-```
-Data
-├── Numerical (Quantitative)
-│   ├── Discrete
-│   └── Continuous
-└── Categorical (Qualitative)
-    ├── Nominal
-    └── Ordinal
-```
+![Data Types](assets/Data_types.png)
 
 ### Categorical (Qualitative) Data
 
@@ -288,7 +290,8 @@ Data
 
 ## Descriptive Statistics — Measures of Central Tendency
 ```
-A measure of central tendency is a statistical measure that represents a typical or central value for a dataset. It provides a summary of the data by identifying a single value that is most representative of the dataset as a whole.
+A measure of central tendency is a statistical measure that represents a typical or central value for a dataset.
+It provides a summary of the data by identifying a single value that is most representative of the dataset as a whole.
 ```
 
 >These measures describe the **center** of data.
@@ -329,6 +332,7 @@ Mean = (2 + 4 + 6) / 3 = 4
 | Population Mean | μ      |
 | Sample Mean     | x̄     |
 
+![Mean](assets/mean.png)
 
 
 **Major Problem of Mean (Outliers)**
@@ -400,7 +404,8 @@ Mode = 2
 ### Weighted Mean
 
 ```
-The weighted mean is the sum of the products of each value and its weight, divided by the sum of the weights. It is used to calculate a mean when the values in the dataset have different importance or frequency.
+The weighted mean is the sum of the products of each value and its weight, divided by the sum of the weights.
+It is used to calculate a mean when the values in the dataset have different importance or frequency.
 ```
 > Mean where **different values have different importance (weights)**.
 
@@ -425,9 +430,12 @@ Weighted Mean =
 
 ### Trimmed Mean
 ```
-A trimmed mean is calculated by removing a certain percentage of the smallest and largest values from the dataset and then taking the mean of the remaining values. The percentage of values removed is called the trimming percentage.
+A trimmed mean is calculated by removing a certain percentage of the smallest and largest values from the dataset
+and then taking the mean of the remaining values. The percentage of values removed is called the trimming percentage.
 ```
 > Mean calculated after **removing extreme values (outliers)**.
+
+![trimmed_mean](assets/trimmed_mean.png)
 
 **Example**
 
@@ -441,7 +449,8 @@ A trimmed mean is calculated by removing a certain percentage of the smallest an
 ---
 ## Measures of Dispersion
 ```
-A measure of dispersion is a statistical measure that describes the spread or variability of a dataset. It provides information about how the data is distributed around the central tendency (mean, median or mode) of the dataset.
+A measure of dispersion is a statistical measure that describes the spread or variability of a dataset.
+It provides information about how the data is distributed around the central tendency (mean, median or mode) of the dataset.
 ```
 
 >Dispersion tells **how spread out** the data is.
@@ -458,7 +467,8 @@ Dispersion
 ### Range
 
 ```
-The range is the difference between the maximum and minimum values in the dataset. It is a simple measure of dispersion that is easy to calculate but can be affected by outliers.
+The range is the difference between the maximum and minimum values in the dataset.
+It is a simple measure of dispersion that is easy to calculate but can be affected by outliers.
 ```
 > Range = Max − Min
 
@@ -475,7 +485,8 @@ Range = 10 − 2 = 8
   
 ### Variance
 ```
-The variance is the average of the squared differences between each data point and the mean. It measures the average distance of each data point from the mean and is useful in comparing the dispersion of datasets with different means.
+The variance is the average of the squared differences between each data point and the mean.
+It measures the average distance of each data point from the mean and is useful in comparing the dispersion of datasets with different means.
 ```
 
 > Variance measures **average squared distance from the mean**
@@ -497,6 +508,8 @@ The variance is the average of the squared differences between each data point a
 | Population Variance | σ² (divide by N)   |
 | Sample Variance     | s² (divide by N−1) |
 
+![variance](assets/variance.png)
+
 **Important Interview Point**
 
 * Sample variance uses **N − 1**
@@ -506,13 +519,16 @@ The variance is the average of the squared differences between each data point a
 
 > Average absolute distance from the mean
 
+![MAD](assets/MAD.png)
+
 * Less sensitive to outliers than variance
 * Cannot be used for inferential statistics
 
 
 ### Standard Deviation
 ```
-The standard deviation is the square root of the variance. It is a widely used measure of dispersion that is useful in describing the shape of a distribution.
+The standard deviation is the square root of the variance. It is a widely used measure of dispersion
+that is useful in describing the shape of a distribution.
 ```
 > Standard Deviation = √Variance
 
@@ -528,9 +544,12 @@ The standard deviation is the square root of the variance. It is a widely used m
 
 ### Coefficient of Variation (CV)
 ```
-The CV is the ratio of the standard deviation to the mean expressed as a percentage. It is used to compare the variability of datasets with different means and is commonly used in fields such as biology, chemistry, and engineering.
+The CV is the ratio of the standard deviation to the mean expressed as a percentage.
+It is used to compare the variability of datasets with different means and is
+commonly used in fields such as biology, chemistry, and engineering.
 
-The coefficient of variation (CV) is a statistical measure that expresses the amount of variability in a dataset relative to the mean. It is a dimensionless quantity that is expressed as a percentage.
+The coefficient of variation (CV) is a statistical measure that expresses
+the amount of variability in a dataset relative to the mean. It is a dimensionless quantity that is expressed as a percentage.
 
 The formula for calculating the coefficient of variation is:
 
@@ -556,14 +575,18 @@ Allows comparison between **different units**
 
 **Categorical -Frequency Distribution Table & Cumulative Frequency**
 
-A **frequency distribution table** is a table that summarizes the number of times (or frequency) that each value occurs in a dataset.
-Let's say we have a survey of 200 people and we ask them about their favourite type of vacation, which could be one of six categories: Beach, City, Adventure, Nature, Cruise, or Other
+A **frequency distribution table** is a table that summarizes the number of times (or frequency) 
+that each value occurs in a dataset. Let's say we have a survey of 200 people and we ask them about 
+their favourite type of vacation, which could be one of six categories: Beach, City, Adventure, Nature, Cruise, or Other
+![frequencydistri](assets/frequencydistri.png)
 
+**Relative frequency** is the proportion or percentage of a category in a dataset or sample. 
+It is calculated by dividing the frequency of a category by the total number of observations in the dataset or sample.
+![RelativeFreq](assets/RelativeFreq.png)
 
-**Relative frequency** is the proportion or percentage of a category in a dataset or sample. It is calculated by dividing the frequency of a category by the total number of observations in the dataset or sample.
-
-
-**Cumulative frequency** is the running total of frequencies of a variable or category in a dataset or sample. It is calculated by adding up the frequencies of the current category and all previous categories in the dataset or sample.
+**Cumulative frequency** is the running total of frequencies of a variable or category in a dataset or sample. 
+It is calculated by adding up the frequencies of the current category and all previous categories in the dataset or sample.
+![cumulativeFreq](assets/cumulativeFreq.png)
 
 **Graphs**
 
@@ -579,13 +602,7 @@ Let's say we have a survey of 200 people and we ask them about their favourite t
 
 
 ## Histogram Shapes
-
-* Symmetric
-* Left-skewed
-* Right-skewed
-* Bimodal
-* Uniform
-* No pattern (noise)
+  ![histogram](assets/histogram.png)
 
 ## Bivariate Analysis (Two Columns)
 
@@ -594,7 +611,9 @@ Let's say we have a survey of 200 people and we ask them about their favourite t
 
 * **Contingency Table (Cross-tab)**
   ```
-  A contingency table, also known as a cross-tabulation or crosstab, is a type of table used in statistics to summarize the relationship between two categorical variables. A contingency table displays the frequencies or relative frequencies of the observed values of the two variables, organized into rows and columns.
+  A contingency table, also known as a cross-tabulation or crosstab, is a type of table used in statistics
+  to summarize the relationship between two categorical variables. A contingency table displays the frequencies or
+  relative frequencies of the observed values of the two variables, organized into rows and columns.
   ```
 
 **Example (Titanic)**
@@ -614,6 +633,7 @@ Let's say we have a survey of 200 people and we ask them about their favourite t
 ### Numerical vs Numerical
 
 * **Scatter Plot**
+  ![ScatterPlot](assets/ScatterPlot.png)
 
 **Shows**
 * relationship between variables
