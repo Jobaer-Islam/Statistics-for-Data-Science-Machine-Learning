@@ -578,14 +578,17 @@ Allows comparison between **different units**
 A **frequency distribution table** is a table that summarizes the number of times (or frequency) 
 that each value occurs in a dataset. Let's say we have a survey of 200 people and we ask them about 
 their favourite type of vacation, which could be one of six categories: Beach, City, Adventure, Nature, Cruise, or Other
+
 ![frequencydistri](assets/frequencydistri.png)
 
 **Relative frequency** is the proportion or percentage of a category in a dataset or sample. 
 It is calculated by dividing the frequency of a category by the total number of observations in the dataset or sample.
+
 ![RelativeFreq](assets/RelativeFreq.png)
 
 **Cumulative frequency** is the running total of frequencies of a variable or category in a dataset or sample. 
 It is calculated by adding up the frequencies of the current category and all previous categories in the dataset or sample.
+
 ![cumulativeFreq](assets/cumulativeFreq.png)
 
 **Graphs**
